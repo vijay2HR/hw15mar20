@@ -1,0 +1,79 @@
+
+
+    <!-DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-sm-2"></div>
+                    <div class="col col-12 col-sm-8">
+             <table class="table"><tr>
+                 <td>ENTER NUM1:</td>
+                 <td><input type="text" id="num1"></td>
+             </tr>
+             <tr>
+                 <td>ENTER NUM2:</td>
+                 <td><input type="text" id="num2"></td>
+             </tr>
+             <tr>
+                 <td>ENTER NUM3:</td>
+                 <td><input type="text" id="num3"></td>
+             </tr>
+             <tr><td>
+                 <center>
+                <button type="button" class="btn btn-success"onclick="Largeof3();">WHICH IS LARGE</button></td></tr>
+        <tr>
+            <td></td>
+            <p id="result">LARGEST=</p></td>
+        </tr>
+        </table>
+        </div>
+        
+        </form>
+    <script>
+        function Largeof3()
+        {
+            var x=parseInt(document.getElementById("num1").value)
+            var y=parseInt(document.getElementById("num2").value)
+            var z=parseInt(document.getElementById("num3").value)
+var r;    
+            if(x>y && x>z)
+            {
+             r=x;
+            console.log(r);
+           document.getElementById("result").innerHTML=r; 
+
+            }
+ else  if(y>x && y>z)
+ {
+             r=y;
+            console.log(r);
+           document.getElementById("result").innerHTML=r; 
+            }
+
+ else if(z>x && z>y)
+            {
+             r=z;
+            console.log(r);
+            
+document.getElementById("result").innerHTML=r;
+            }
+           // document.getElementById("result").innerHTML=r;     
+        }
+    </script>
+        
+    </body>
+    </html>
+
+
+
+
